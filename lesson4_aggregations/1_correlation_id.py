@@ -31,8 +31,6 @@ def log_flow(correlationId, clientApplication):
     appAPI = 'WorkshopAPI'
     appWebJob = 'WorkshopWebJob'
 
-    correlationId = str(uuid.uuid4())
-
     log(appClient, clientApplication, correlationId, "Sending request to API...")
     log(appAPI, clientApplication, correlationId, "Request received from client.")
     log(appAPI, clientApplication, correlationId, "Processing request...")
