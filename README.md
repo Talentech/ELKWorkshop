@@ -15,6 +15,7 @@
     - [ElasticSearch](http://localhost:9200/)
     - [Kibana](http://localhost:5601)
 
+1. Install python 3 - it will be necessary to run some examples.
 
 ## Lessons
 [Lesson 1 - Setting up new index with lifecycle policy](docs/Lesson1_setting_index_lifecycle_policy.md)
