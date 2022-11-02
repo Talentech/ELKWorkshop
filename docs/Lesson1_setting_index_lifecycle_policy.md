@@ -69,5 +69,6 @@ Create indices with index lifecycle instead. So assuming that your indes is call
 
 1. Configure your policy. **It's important to put policy name the same as in the configuration above** - so in this case `my-index-policy`.
 
+You can also use [this python script](../playground/create_index_lifecycle_policy.py) to automatically create index lifecycle policy
 
 Reference: [ElasticSearch - Getting Started](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/getting-started-index-lifecycle-management.html)
