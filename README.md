@@ -26,4 +26,4 @@
 
 [Lesson 4 - Aggregations](docs/Lesson4_aggregations.md)
 
-[Lesson 5 - Visualizations and Dashboards](docs/Lesson5_visualizations_and_dashboards.md)
+[Lesson 5 - Visualizations, Dashboards and Searches](docs/Lesson5_visualizations_and_dashboards.md)
