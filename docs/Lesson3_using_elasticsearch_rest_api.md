@@ -7,19 +7,8 @@ DevTools:
 GET /
 ```
 
-Python:
-```
-from textwrap import indent
-import requests
-from pprint import pprint
+ [Python example](../lesson3_rest_api/1_elasticsearch_healthcheck.py)
 
-url = 'http://localhost:9200'
-
-response = requests.get(url)
-
-pprint(response.json())
-
-```
 
 ### 2. List all elasticsearch indices
 
@@ -28,19 +17,7 @@ DevTools:
 GET /_cat/indices?v
 ```
 
-Python:
-```
-from textwrap import indent
-import requests
-from pprint import pprint
-
-url = 'http://localhost:9200/_cat/indices?v'
-response = requests.get(url)
-
-pprint(response.text)
-
-
-```
+ [Python example](../lesson3_rest_api/2_list_all_indices.py)
 
 ### 3. Insert simple document
 
@@ -60,32 +37,7 @@ POST my-index-000001/_doc
 }
 ```
 
-Python:
-```
-import requests
-from datetime import datetime
-from pprint import pprint
-
-index = 'my-index'
-
-url = 'http://localhost:9200/{}-000001/_doc'.format(index)
-data = {
-  "@timestamp": datetime.utcnow().isoformat(),
-  "level": "Information",
-  "message": "Hello, World from REST API via python!",
-  "fields": {
-    "Platform": "Talentech",
-    "Solution": "Workshop",
-    "AppName": "Lesson2",
-    "EnvironmentName": "Local"
-  }
-}
-
-response = requests.post(url, json=data, headers={'Content-type': 'application/json'})
-
-pprint(response.json())
-
-```
+ [Python example](../lesson3_rest_api/3_insert_simple_document.py)
 
 ### 4 Query documents
 
