@@ -26,7 +26,7 @@ ILogger CreateLogger()
                         {
                             MinimumLogEventLevel = LogEventLevel.Information,
                             AutoRegisterTemplate = false,
-                            IndexFormat = "talmundo-logs",
+                            IndexFormat = "my-index",
                             CustomFormatter = new ExceptionAsObjectJsonFormatter(renderMessage: true)
                         }));
 
